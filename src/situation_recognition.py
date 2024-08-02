@@ -9,3 +9,4 @@ def recognize_situation(sensor_data):
     else:
         return "normal"
 
+
