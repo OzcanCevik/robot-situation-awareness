@@ -1,9 +1,22 @@
 
 ### `memory.py` File
 
-```python
+
 import json
-import os
+
+def save_memory(data, filename="data/memory.json"):
+    with open(filename, 'w') as f:
+        json.dump(data, f)
+
+def load_memory(filename="data/memory.json"):
+    with open(filename, 'r') as f:
+        return json.load(f)
+
+
+'''
+```python
+import json 
+import os 
 
 class Memory:
     def __init__(self, memory_file='data/memory.json'):
@@ -27,3 +40,4 @@ class Memory:
 
     def recall(self, situation):
         return self.memory.get(situation, None)
+'''
