@@ -9,3 +9,4 @@ def react(decision):
         print("Fan is turned on.")
     else:
         print("No action needed.")
+
