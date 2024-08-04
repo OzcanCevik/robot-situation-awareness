@@ -1,3 +1,4 @@
+'''
 # Mock sensor_interface module
 class sensor_interface:
     @staticmethod
@@ -14,21 +15,36 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-
-
-
-
-
-
-
-
 '''
+
+
+
+
+
+
+
 from sensor_interface import read_sensor_data
 from situation_recognition import recognize_situation
 from decision_making import make_decision
 from reactions import react 
 from memory import save_memory, load_memory
+
+try:
+    import sensor_interface
+except ImportError:
+    # Mock sensor_interface if it's not available
+    class sensor_interface:
+        @staticmethod
+        def read_sensor():
+            return "Simulated Sensor Data"
+
+def main():
+    data = sensor_interface.read_sensor()
+    print(data)
+
+if __name__ == "__main__":
+    main()
+
 
 def main():
     print("Loading memory...")
@@ -63,4 +79,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-'''
