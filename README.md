@@ -35,15 +35,11 @@ To clone the project to your local machine, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
-
-    # Robot Situation Awareness Project
-
-[View the live site](https://ozcancevik.github.io/robot-situation-awareness/)
-
-
 ## Usage
 
 To run the main application, use the following command:
 
 ```bash
 python src/main.py
+```
+[View the live site](https://ozcancevik.github.io/robot-situation-awareness/)
