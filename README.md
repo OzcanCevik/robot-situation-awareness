@@ -1,4 +1,4 @@
-![Project Preview](akrep.jpg)
+![Project Preview](akrep.JPG)
 
 
 # Robot Situation Awareness Project
