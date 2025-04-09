@@ -1,3 +1,6 @@
+![Project Preview](akrep.jpg)
+
+
 # Robot Situation Awareness Project
 
 ## Project Description
